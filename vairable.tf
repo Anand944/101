@@ -17,8 +17,7 @@ variable "address_space" {
 }
 variable "subnet_names" {
   description = "A list of public subnets inside the vNet."
-  type        = list(string)
-  default     = ["subnet1", "subnet2", "subnet3"]
+  type        = string
 }
 variable "nic_name" {
   type = string
